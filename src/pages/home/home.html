@@ -1,14 +1,22 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Locate My Friend
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content center text-center>
+    <ion-grid>
+          <ion-row center>
+                <ion-col>
+                    <button ion-button round (click)="navigateToUserPage()">User</button>
+                    <hr/>
+                    <button ion-button round (click)="navigateToOtherPage()">Save my position</button>
+                    <hr/>
+                    <button ion-button round (click)="navigateToSearchPage()">Find my friends</button>
+                </ion-col>
+          </ion-row>
+    </ion-grid>
 </ion-content>
+
